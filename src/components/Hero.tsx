@@ -53,7 +53,7 @@ export function Hero() {
     <section className="hero" id="top">
       <div className="wrap">
         <div>
-          <span className="eyebrow">20 read-only tools · demo, sandbox, production</span>
+          <span className="eyebrow">intiwse · Model Context Protocol</span>
           <h1>
             Joule doesn&apos;t speak OData.
             <br />
@@ -61,7 +61,8 @@ export function Hero() {
             <br />
             <span className="hl">This sits in the middle.</span>
           </h1>
-          <p className="lead">
+          <p className="lead">Give your AI agent secure access to SAP SuccessFactors.</p>
+          <p className="sub">
             A question like “who&apos;s on Jane&apos;s team” still has to become a typed OData
             call, survive a 401, and come back as a sentence someone can use in a 1:1. This is
             the last mile that does that — with a scope check in front of every read.

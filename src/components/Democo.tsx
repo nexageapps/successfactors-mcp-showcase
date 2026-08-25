@@ -13,20 +13,40 @@ export function Democo() {
   return (
     <section className="section" id="democo">
       <div className="wrap">
-        <div className="section-head row">
+        <div className="democo-banner">
           <div>
-            <span className="eyebrow">mock Employee Central</span>
+            <span className="eyebrow">Mock Employee Central</span>
             <h2>DEMOCO · DEMOCO Global</h2>
             <p>
-              Synthetic tenant with the same shape as SuccessFactors: company, department,
-              position, manager, location. Jane Smith is <code className="mono">100045</code>.
-              No live SAP system.
+              Synthetic Employee Central tenant. Same READ tools as a live SuccessFactors system.
+              Environment: <strong>Demo</strong>. Jane Smith is <code>100045</code>. No live SAP
+              system.
             </p>
           </div>
+          <dl className="democo-kpis">
+            <div>
+              <dt>Employees</dt>
+              <dd>12</dd>
+            </div>
+            <div>
+              <dt>Departments</dt>
+              <dd>5</dd>
+            </div>
+            <div>
+              <dt>Locations</dt>
+              <dd>5</dd>
+            </div>
+            <div>
+              <dt>Pending time off</dt>
+              <dd>3</dd>
+            </div>
+          </dl>
+        </div>
+        <p style={{ marginBottom: 16 }}>
           <a className="btn btn-ghost" href={`${SPACE_URL}/#democo`} target="_blank" rel="noopener noreferrer">
             View on Space
           </a>
-        </div>
+        </p>
 
         <div className="org-wall" role="list">
           {DEPARTMENTS.map((dept) => (

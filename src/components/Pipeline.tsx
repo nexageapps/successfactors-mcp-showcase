@@ -38,7 +38,7 @@ export function Pipeline() {
           </div>
           <div className="card">
             <h4 className="fail">What it should never contain</h4>
-            <p className="body" style={{ color: 'var(--deny)' }}>
+            <p className="body" style={{ color: 'var(--err)' }}>
               access_token · apikey · password
             </p>
           </div>

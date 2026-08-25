@@ -8,9 +8,8 @@ security boundary in the middle: **20 read-only tools**, a scope check on every
 read, and a synthetic Employee Central tenant (`DEMOCO`) you can try without
 credentials.
 
-The visual language is the dark “security-boundary” display — Space Grotesk,
-IBM Plex, allow / scope / deny — applied to the live Space’s tools, org chart,
-and connect flow.
+The visual language matches the live Space: navy header, cyan rule, SAP blue
+primary, Inter on a light dotted canvas.
 
 ## What’s here
 

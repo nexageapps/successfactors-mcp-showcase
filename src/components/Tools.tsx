@@ -22,7 +22,7 @@ export function Tools() {
             <span className="eyebrow">named for the question, not the entity</span>
             <h2>The agent should never know it&apos;s calling User.manager</h2>
             <p>
-              It should see <span className="mono" style={{ color: 'var(--allow)' }}>get_manager</span>.
+              It should see <span className="accent-code">get_manager</span>.
               Every tool in this release is read-only. Write tools (
               <span className="mono">update_employee</span>,{' '}
               <span className="mono">create_time_off_request</span>) sit on the roadmap behind{' '}

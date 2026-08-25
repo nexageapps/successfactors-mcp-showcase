@@ -50,7 +50,7 @@ export function SpaceShowcase() {
                 <dd>5</dd>
               </div>
             </dl>
-            <p style={{ color: 'var(--muted)', fontSize: 14.5, maxWidth: '68ch' }}>
+            <p style={{ color: 'var(--muted)', fontSize: 15, maxWidth: '68ch', lineHeight: 1.6 }}>
               Hugging Face Spaces cannot be embedded here (the live app only allows frames from
               huggingface.co). Open the Space to connect a tenant, browse the tool catalog, or
               copy client configs. Everything below is the same DEMOCO data, restyled for this
