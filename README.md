@@ -4,8 +4,7 @@ emoji: 🐨
 colorFrom: blue
 colorTo: indigo
 sdk: static
-app_build_command: npm install && npm run build
-app_file: dist/index.html
+app_file: index.html
 pinned: false
 license: mit
 short_description: MCP tools for SuccessFactors
@@ -56,6 +55,7 @@ from https://huggingface.co/settings/tokens:
 python3 -m pip install -U huggingface_hub
 export PATH="$HOME/.local/bin:$PATH"
 
+unset HF_TOKEN HUGGING_FACE_HUB_TOKEN
 python3 -m huggingface_hub.cli.hf auth login
 bash scripts/upload-space.sh
 ```
@@ -63,7 +63,11 @@ bash scripts/upload-space.sh
 If `hf: command not found`, skip the binary and use the Python module (same
 commands as above). After login, `npm run upload:space` also works.
 
-The Space rebuilds from `npm install && npm run build` and serves `dist/index.html`.
+`HF_TOKEN` and `HUGGING_FACE_HUB_TOKEN` override a saved `hf auth login` and
+must be unset if they are invalid. The upload script builds locally and pushes
+the static `dist` output plus this README so `index.html` sits at the Space
+root. Hugging Face then serves the files as a static Space (no on-Hub npm
+build, no credits).
 
 ## Links
 
