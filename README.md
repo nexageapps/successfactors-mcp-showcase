@@ -47,6 +47,24 @@ npm run build
 npm run preview
 ```
 
+## Publish to Hugging Face
+
+`hf` is the Hugging Face Hub CLI. Install it, then log in with a **write** token
+from https://huggingface.co/settings/tokens:
+
+```bash
+python3 -m pip install -U huggingface_hub
+export PATH="$HOME/.local/bin:$PATH"
+
+python3 -m huggingface_hub.cli.hf auth login
+bash scripts/upload-space.sh
+```
+
+If `hf: command not found`, skip the binary and use the Python module (same
+commands as above). After login, `npm run upload:space` also works.
+
+The Space rebuilds from `npm install && npm run build` and serves `dist/index.html`.
+
 ## Links
 
 | | |
